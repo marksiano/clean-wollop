@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Frequency Visualization</title>
+      <style>
+
+        @font-face {
+          font-family: "Quicksand";
+          src: url("Quicksand-Regular.otf") format("opentype");
+        }
+
+        p {
+          font-family:"Quicksand", sans-serif;
+        }
+
+        body {
+          zoom:0.8;
+        }
+
+        button:focus {
+          outline:0;
+        }
+
+        table { 
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .file_upload > input {
+          display: none;
+        }
+
+        .input {
+        margin-left: 115px;
+        display:inline-block;
+        }
+      </style>
+  </head>
+
+  <body style="margin:0;padding:0;text-align:center;background-color:#829298">
+
+    <audio id="audioElement" src="./audio/vivaldi.mp3"></audio> <!-- add "controls" for controls -->
+
+    <div>
+      <div style="position:absolute;top:20%;bottom:0;left:0;right:0;margin:auto;">
+
+        <table>
+          <tr>
+            <td id="thetd"></td>
+          </tr>
+
+          <tr>
+            <td>
+              <table align="left">
+                <tr>
+                  <td align="left">
+                    <button id="play" style="background: url(images/play_button.png);height:90px;width:90px;border:0"/>
+                  </td>
+                  <td>
+                    <button id="pause" style="background: url(images/pause_button.png);height:90px;width:90px;border:0"/>
+                  </td>
+                  <td>
+                    <div class="file_upload">
+                      <label for="audio">
+                        <img id="upload" src="images/upload.png" />
+                      </label>
+                      <input type="file" id="audio" class="input" />
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="left">
+              <p style="margin-top:-10px;margin-left:24px;font-size:30px;color:rgb(130, 212, 187)" id="hover_text">Press Play to Start Visualization</p>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+
+      <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+      <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+      <script src="app.js"></script>
+      
+    </div>
+    <p style="position:fixed;bottom:0;width:100%;text-align:center;font-size:18px;color:rgb(160, 242, 207)">Designed by Mark Siano</p>
+  </body>
+</html>
