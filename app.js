@@ -19,7 +19,7 @@ $(document).ready(function () {
 	var isBlink = (isChrome || isOpera) && !!window.CSS;
 
 	if (!isChrome) {
-		document.body.innerHTML = "<p style=\"position:fixed;top:50%;width:100%;text-align:center;font-size:18px;color:rgb(160, 242, 207)\">Sorry! For now, Music Visualizer only works with Google Chrome.</p>";
+		document.body.innerHTML = "<p style=\"position:fixed;top:50%;width:100%;text-align:center;font-size:30px;color:rgb(160, 242, 207)\">Sorry! For now, Music Visualizer only works with Google Chrome.</p>";
 	}
 
   	var audioContext = new (window.AudioContext || window.webkitAudioContext)();
