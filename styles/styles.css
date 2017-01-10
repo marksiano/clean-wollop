@@ -1,1 +1,31 @@
 
+@font-face {
+  font-family: "Quicksand";
+  src: url("Quicksand-Regular.otf") format("opentype");
+}
+
+p {
+  font-family:"Quicksand", sans-serif;
+}
+
+body {
+  zoom:0.8;
+}
+
+button:focus {
+  outline:0;
+}
+
+table { 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.file_upload > input {
+  display: none;
+}
+
+.input {
+margin-left: 115px;
+display:inline-block;
+}
