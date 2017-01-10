@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: "Quicksand";
-  src: url("Quicksand-Regular.otf") format("opentype");
+  src: url("../fonts/Quicksand-Regular.otf") format("opentype");
 }
 
 p {
@@ -26,6 +26,6 @@ table {
 }
 
 .input {
-margin-left: 115px;
-display:inline-block;
+  margin-left: 115px;
+  display:inline-block;
 }
