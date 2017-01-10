@@ -1,11 +1,11 @@
 
 @font-face {
-  font-family: "Quicksabnd";
-  src: url("../fonts/Quicksaand-Regular.otf") format("opentype");
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Regular.otf") format("opentype");
 }
 
 p {
-  font-family:"Quicksband", sans-serif;
+  font-family:"Quicksand", sans-serif;
 }
 
 body {
